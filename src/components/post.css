@@ -1,0 +1,14 @@
+.post-details {
+    margin: 10px;
+}
+.comment > textarea {
+    width: 20%;
+    height: 100px;
+    color: #000000;
+    padding: 10px;
+}
+.comment > button {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+}

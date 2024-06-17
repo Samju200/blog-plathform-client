@@ -1,0 +1,30 @@
+.create-post {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.create-post > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.create-post > input {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000000;
+}
+.create-post > textarea {
+    width: 80%;
+    height: 150px;
+    color: #000000;
+    padding: 10px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border: none;
+}
+.create-post > button {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+}
