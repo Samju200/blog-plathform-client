@@ -37,6 +37,7 @@
 .home > h1,
 .home > form {
     text-align: center;
+    color: green;
 }
 .search > input {
     width: 40%;
