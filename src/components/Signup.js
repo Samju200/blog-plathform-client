@@ -6,6 +6,7 @@ import Logo from "../img/logo1.jpeg";
 function Signup() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -17,6 +18,7 @@ function Signup() {
             navigate("/login");
         } catch (err) {
             console.error(err);
+            setError(err);
         }
     };
 
@@ -48,6 +50,7 @@ function Signup() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
+                    <p className="error">{error}</p>
                     <button type="submit" className="btn">
                         Login
                     </button>

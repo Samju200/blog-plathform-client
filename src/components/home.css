@@ -16,12 +16,23 @@
 }
 .home-header-right > a,
 .home-header-right > div > a {
-    border: 1px solid #000;
+    border: none;
     padding: 10px 20px;
     margin-left: 10px;
+    border-radius: 8px;
+    background: #fff;
+    color: rgb(105, 233, 105);
+    cursor: pointer;
 }
 .home-header-right > div > button {
-    padding: 12px 20px;
+    padding: 13px 20px 10px 20px;
+    margin-left: 10px;
+    align-self: center;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    color: rgb(105, 233, 105);
 }
 .home > h1,
 .home > form {
@@ -41,6 +52,11 @@
 .search-btn {
     width: 10%;
     height: 45px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background: #fff;
+    color: rgb(105, 233, 105);
+    border: none;
 }
 .posts {
     display: grid;
@@ -52,6 +68,7 @@
 .logo > a {
     display: flex;
     align-items: center;
+    color: green;
 }
 .logo > a > img {
     width: 30px;
@@ -66,5 +83,26 @@ footer {
 @media only screen and (max-width: 767px) {
     .posts {
         grid-template-columns: 1fr;
+    }
+    .home-header {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .home-header-right {
+        flex-direction: column;
+    }
+    .home-header-right > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .home-header-right > div > button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .search-btn {
+        width: 15%;
     }
 }

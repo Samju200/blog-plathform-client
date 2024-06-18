@@ -35,7 +35,7 @@ a {
 input:focus {
     border: none;
     outline: none;
-    color: #fff;
+    color: #000000;
 }
 .login-form > .btn {
     background-color: green;

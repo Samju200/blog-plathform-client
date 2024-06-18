@@ -7,6 +7,7 @@ import api from "../api/axiosConfig";
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
     const { setAuth } = useContext(AuthContext);
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
@@ -20,6 +21,7 @@ function Login() {
             navigate("/");
         } catch (err) {
             console.error(err);
+            setError(err);
         }
     };
 
@@ -51,6 +53,7 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
+                    <p className="error">{error}</p>
                     <button type="submit" className="btn">
                         Login
                     </button>
